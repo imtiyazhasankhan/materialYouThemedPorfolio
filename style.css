@@ -625,7 +625,7 @@ hr{
     width: 54%;
     height: 54%;
     margin-top: 3.4px;
-    background: url("/svgs/iconHtml.svg") center center no-repeat;
+    background: url("./svgs/iconHtml.svg") center center no-repeat;
     background-size: contain;
 }
 
