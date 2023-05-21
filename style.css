@@ -449,13 +449,13 @@ hr{
     margin-top: 0px;
 }
 #instagram{
-    background: url("/svgs/iconInsta.svg") center center no-repeat;
+    background: url("./svgs/iconInsta.svg") center center no-repeat;
     background-size: cover;
 }#telegram{
-    background: url("/svgs/iconTelegram.svg") center center no-repeat;
+    background: url("./svgs/iconTelegram.svg") center center no-repeat;
     background-size: cover;
 }#email{
-    background: url("/svgs/iconMail.svg") center center no-repeat;
+    background: url("./svgs/iconMail.svg") center center no-repeat;
     background-size: cover;
 }
 
@@ -620,7 +620,53 @@ hr{
     font-size: 1.5rem;
 }
 /* _______________ Skill icons____________________ */
-/* (icons code moved to index.html file) */
+
+.skillsContainer .rDiv .skillSliders .iconContainer .iconHtml {
+    width: 54%;
+    height: 54%;
+    margin-top: 3.4px;
+    background: url("/svgs/iconHtml.svg") center center no-repeat;
+    background-size: contain;
+}
+
+.skillsContainer .rDiv .skillSliders .iconContainer .iconCss {
+    width: 54%;
+    height: 54%;
+    margin-top: 3px;
+    background: url("./svgs/iconCss.svg") center center no-repeat;
+    background-size: contain;
+}
+
+.skillsContainer .rDiv .skillSliders .iconContainer .iconJs {
+    width: 54%;
+    height: 54%;
+    margin-top: -3px;
+    background: url("./svgs/iconJS.svg") center center no-repeat;
+    background-size: contain;
+}
+
+.skillsContainer .rDiv .skillSliders .iconContainer .iconReact {
+    width: 60%;
+    height: 60%;
+    background: url("./svgs/iconReact.svg") center center no-repeat;
+    background-size: contain;
+}
+
+.skillsContainer .rDiv .skillSliders .iconContainer .iconBootstrap {
+    width: 60%;
+    height: 60%;
+    background: url("./svgs/iconBootstrap.svg") center center no-repeat;
+    margin-top: -1px;
+    background-size: contain;
+}
+
+.skillsContainer .rDiv .skillSliders .iconContainer .iconFigma {
+    width: 60%;
+    height: 60%;
+    background: url("./svgs/iconFigma.svg") center center no-repeat;
+    margin-top: -1px;
+    background-size: contain;
+}
 
 /* ________________________ENd of skill Icons__________________ */
 
