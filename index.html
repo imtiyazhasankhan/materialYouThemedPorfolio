@@ -90,7 +90,7 @@
         <hr>
         <div class="skillsContainer">
             <div class="lDiv">
-                <div class="starShape">
+                <div id="starShape" class="starShape">
                     <span class="sssPan">SKILLS</span>
                 </div>
             </div>
@@ -99,7 +99,8 @@
                 <!-- ---slider---- -->
                 <div class="skillSliders">
                     <div class="miniLine"></div>
-                    <div class="slider" style="width: calc(75% - 70px);">
+                    <!-- <div id="htmlSlider" class="slider" style="width: calc(75% - 70px);"> -->
+                    <div id="htmlSlider" class="slider">
                         <span>HTML</span>
                     </div>
                     <span class="iconContainer">
@@ -111,7 +112,8 @@
                 <!-- ---slider---- -->
                 <div class="skillSliders">
                     <div class="miniLine"></div>
-                    <div class="slider" style="width: calc(85% - 70px);">
+                    <!-- <div class="slider" style="width: calc(85% - 70px);"> -->
+                    <div id="cssSlider" class="slider">
                         <span>CSS</span>
                     </div>
                     <span class="iconContainer">
@@ -123,7 +125,8 @@
                 <!-- ---slider---- -->
                 <div class="skillSliders">
                     <div class="miniLine"></div>
-                    <div class="slider" style="width: calc(76% - 70px);">
+                    <!-- <div class="slider" style="width: calc(76% - 70px);"> -->
+                    <div id="jsSlider" class="slider">
                         <span>JavaScript</span>
                     </div>
                     <span class="iconContainer">
@@ -134,7 +137,8 @@
                 <!-- ---slider---- -->
                 <div class="skillSliders">
                     <div class="miniLine"></div>
-                    <div class="slider" style="width: calc(60% - 70px);">
+                    <!-- <div class="slider" style="width: calc(60% - 60px);"> -->
+                    <div id="reactJsSlider" class="slider">
                         <span>ReactJS</span>
                     </div>
                     <span class="iconContainer">
@@ -146,7 +150,8 @@
                 <!-- ---slider---- -->
                 <div class="skillSliders">
                     <div class="miniLine"></div>
-                    <div class="slider" style="width: calc(70% - 70px);">
+                    <!-- <div class="slider" style="width: calc(70% - 70px);"> -->
+                    <div id="bootstrapSlider" class="slider">
                         <span>Bootstrap</span>
                     </div>
                     <span class="iconContainer">
@@ -158,7 +163,8 @@
                 <!-- ---slider---- -->
                 <div class="skillSliders">
                     <div class="miniLine"></div>
-                    <div class="slider" style="width: calc(80% - 70px);">
+                    <!-- <div class="slider" style="width: calc(80% - 70px);"> -->
+                    <div id="figmaSlider" class="slider">
                         <span>Figma</span>
                     </div>
                     <span class="iconContainer">
@@ -175,7 +181,7 @@
     <!-- ______________Project Container___________ -->
     <div class="projectsFrame">
         <div class="pTopDiv">
-            <div class="roundyX">
+            <div id="roundyX" class="roundyX">
                 <span class="sssPan">PROJECTS</span>
             </div>
             <div>
@@ -272,6 +278,48 @@
         }
         // end of navbar js
 
+        // -- animating sliders ---------------
+        let animateSliders = () => {
+            let htmlSlider = document.getElementById("htmlSlider")
+            htmlSlider.style.width = "calc(75% - 70px)"
+
+            let cssSlider = document.getElementById("cssSlider")
+            cssSlider.style.transitionDelay = "0.2s"
+            cssSlider.style.width = "calc(85% - 70px)"
+            
+            let jsSlider = document.getElementById("jsSlider")
+            jsSlider.style.transitionDelay = "0.4s"
+            jsSlider.style.width = "calc(76% - 70px)"
+            
+            let reactJsSlider = document.getElementById("reactJsSlider")
+            reactJsSlider.style.transitionDelay = "0.6s"
+            reactJsSlider.style.width = "calc(60% - 60px)"
+
+            let bootstrapSlider = document.getElementById("bootstrapSlider")
+            bootstrapSlider.style.transitionDelay = "0.4s"
+            bootstrapSlider.style.width = "calc(70% - 70px)"
+
+            let figmaSlider = document.getElementById("figmaSlider")
+            figmaSlider.style.transitionDelay = "0.7s"
+            figmaSlider.style.width = "calc(80% - 70px)"
+
+        }
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var targetPosition = 200;
+            if (scrollPosition >= targetPosition) {
+                setTimeout(animateSliders, 123)
+            }
+
+            // Animating material you shapes
+            if (window.scrollY >= 111){
+                document.getElementById("starShape").style.animation = "rotatingAtm 1s 0.2s"
+            }
+            if (window.scrollY >= 1000){
+                document.getElementById("roundyX").style.animation = "rotatingAtm 1s 0.2s"
+            }
+        });
+        // end of animating sliders ------------
 
 
 

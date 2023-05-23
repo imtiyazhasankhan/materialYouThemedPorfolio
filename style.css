@@ -577,10 +577,23 @@ hr{
     justify-content: center;
     color: var(--accentClr);
     font-size: 1.5rem;
+    /* animation: rotatingAtm 1s 0.2s; */
 }
+
+@keyframes rotatingAtm {
+    from{
+        transform: rotate(-90deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
 .sssPan{
     font-size: 1.5rem;
 }
+
+
 .skillsContainer .rDiv .skillSliders{
     /* background-color: #f0f6b2; */
     margin: var(--egdeGap);
@@ -602,10 +615,14 @@ hr{
     height: 100%;
     padding: 0px 20px;
     display: flex;
-    width: calc(80% - 70px);
+    /* width: calc(80% - 70px); */
+    width: 120px;
     color: white;
     align-items: center;
+    transition: all 2s; 
 }
+
+
 .skillsContainer .rDiv .skillSliders .iconContainer{
     background-color: var(--accentClr);
     color: #fff;
