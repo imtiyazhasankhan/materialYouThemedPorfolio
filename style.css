@@ -777,11 +777,12 @@ hr{
     background-color: #ffffffa6;
     color: var(--accentClr);
     border: 2px solid var(--accentClr);
-    padding: 20px 40px;
-    font-size: 1.1rem;
     border-radius: 100px;
     position: relative;
     overflow: hidden;
+    font-size: 0.9rem;
+    padding: 0px 20px;
+    height: 40px;
 }
 #viewMoreCards::before{
     content: "";
