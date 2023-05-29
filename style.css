@@ -903,7 +903,6 @@ hr{
 .contactUsContainer{
     background-color: var(--tintClr);
     /* height: 200px; */
-    padding-bottom: 100px;
     display: grid;
     grid-template-columns: 1.4fr 2fr;
     column-gap: 6px;
@@ -913,13 +912,14 @@ hr{
     border-top-right-radius: 28px;
     /* padding-top: var(--egdeGap);    */
     padding-top: 200px;
+    padding-bottom: 50px;
 }
 #scrollToContactUs{
     width: 20px;
     height: 20px;
     /* background-color: rebeccapurple; */
     position: absolute;
-    margin-top: -58px;
+    margin-top: -169px;
 }
 .endaPenda{
     width: 150px;
@@ -948,20 +948,7 @@ hr{
     height: fit-content;
 
 }
-/* .nh__{ 
-    width: 150px;
-    height: 150px;
-    background: url("./svgs/shapeStar.svg") center center no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accentClr);
-    font-size: 1.2rem;
-    left: 0; right: 0;
-    margin: auto;
-    margin-bottom: 30px;
-} */
+
 .contactUsContainer .tLdiv .cltCont{
     /* background-color: rgb(13, 191, 138); */
 }
@@ -1133,8 +1120,10 @@ textarea:focus {
 }
 @media screen and (max-width: 500px){
     .contactUsContainer .tLdiv{
-        /* background-color: blueviolet; */
         padding: 0px var(--egdeGap);
+    }
+    .contactUsContainer .tLdiv .cltCont{
+        width: 100%;
     }
     .contactUsContainer .tLdiv .cltCont .sapna{
         display: block;
