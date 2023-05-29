@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xeng</title>
+    <title>imtiyaz's Portfolio</title>
     <meta name="theme-color" content="#fce7eb">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,7 +21,7 @@
         <div class="leftDiv">
             <!-- Don't get confused with texts like "public", "description" insdie span tag just learn more about google material icons-->
             <span class="material-icons">public</span>
-            <h3>xyz</h3>
+            <h3>Portfolio</h3>
         </div>
         <div class="linksContainer" id="linksContainer">
             <div class="links">
@@ -29,13 +29,14 @@
                     <div class="desc">Skills</div>
                 </a>
             </div>
+
             <div class="links">
-                <a href="#"><span class="material-icons">space_dashboard</span>
+                <a href="#scrollToProjects"><span class="material-icons">space_dashboard</span>
                     <div class="desc">Projects</div>
                 </a>
             </div>
             <div class="links">
-                <a id="contactUsTile" href="#"><span class="material-icons">contact_page</span>
+                <a id="contactUsTile" href="#scrollToContactUs"><span class="material-icons">contact_page</span>
                     <div class="desc">Contact Us</div>
                 </a>
             </div>
@@ -64,8 +65,8 @@
         <div class="textContainer">
 
             <span class="tText0">Hello!</span>
-            <span class="tText1">I AM XengDo</span>
-            <span class="tText2" id="scrollToSkill">Front-End Web Developer</span>
+            <span class="tText1">I AM IMTIYAZ</span>
+            <span class="tText2">Front-End Web Developer</span>
 
 
             <p class="iBuild">I build and design the Websites that attarct the viewers</p>
@@ -89,9 +90,10 @@
         </div>
         <hr>
         <div class="skillsContainer">
+            <div id="scrollToSkill"></div>
             <div class="lDiv">
                 <div id="starShape" class="starShape">
-                    <span class="sssPan">SKILLS</span>
+                    <span class="sssPan">Skills</span>
                 </div>
             </div>
             <div class="rDiv">
@@ -180,11 +182,17 @@
 
     <!-- ______________Project Container___________ -->
     <div class="projectsFrame">
+        <div id="scrollToProjects"></div>
         <div class="pTopDiv">
             <div id="roundyX" class="roundyX">
-                <span class="sssPan">PROJECTS</span>
+                <span class="sssPan" style="transform: scale(0.86);">Projects</span>
             </div>
-            <div>
+            <div id="pCardsContainer" class="pCardsContainer">
+
+                <div id="showMoreBtnContainer" class="showMoreBtnContainer">
+                    <button id="viewMoreCards">View More</button>
+                </div>
+
                 <!-- -------projects card_____ -->
                 <div class="pCards">
                     <!-- <div class="imgCnt"></div> -->
@@ -236,6 +244,43 @@
                     </div>
                 </div>
                 <!-- -------end of projects card_____ -->
+
+                <!-- -------projects card_____ -->
+                <div class="pCards">
+                    <!-- <div class="imgCnt"></div> -->
+                    <img class="cardImg" src="./imgs/img0.png" alt="">
+                    <div class="textsCnt">
+                        <div class="headingText">News App ReactJS</div>
+                        <p>I have built a News website using React.js and integrated it with the News API. The website
+                            provides current news articles and includes a search function for users to find specific
+                            news content. asfg jhdfa fhva gf</p>
+                        <div class="skillUsed">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- -------end of projects card_____ -->
+
+                <!-- -------projects card_____ -->
+                <div class="pCards">
+                    <!-- <div class="imgCnt"></div> -->
+                    <img class="cardImg" src="./imgs/img0.png" alt="">
+                    <div class="textsCnt">
+                        <div class="headingText">News App ReactJS</div>
+                        <p>I have built a News website using React.js and integrated it with the News API. The website
+                            provides current news articles and includes a search function for users to find specific
+                            news content. asfg jhdfa fhva gf</p>
+                        <div class="skillUsed">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- -------end of projects card_____ -->
+
                 <!-- -------projects card_____ -->
                 <div class="pCards">
                     <!-- <div class="imgCnt"></div> -->
@@ -261,8 +306,56 @@
     </div>
     <!-- ______________end of Project Container___________ -->
 
+    <!-- ------------Contact Us _____________________ -->
+    <div class="contactUsContainer">
+        <div id="scrollToContactUs"></div>
+        <!-- --- top || left div --- -->
+        <div class="endaPenda">
+            <span class="sssPan cntus">Contact Us</span>
+        </div>
+        <div class="tLdiv">
+            <div class="cltCont">
+                <!-- <div class="nh__">CONTACT US</div> -->
+                <div class="sapna">
+                    <div class="contactUsIcons">
+                       <div class="icon iconPhone"></div>
+                    </div> 
+                    <a href="tel:+1234567890">123-456-7890</a>
+                </div>
+                <div class="sapna">
+                    <div class="contactUsIcons" >
+                        <div class="icon iconEmail"></div>
+                    </div> 
+                    <a href="mailto:info@example.com">info@example.com</a>
+                </div>
+                <div class="sapna">
+                    <div class="contactUsIcons" >
+                        <div class="icon iconLocation"></div>
+                    </div> 
+                    <!-- <a href="">New Delhi, India</a> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14010.184192681178!2d77.2128949495828!3d28.6133922536312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1685287478404!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- --- end of top || left div --- -->
+
+        <!-- ----- right || bottom div ------- -->
+        <div class="bRdiv">
+            <div class="form">
+                <div class="inptCont">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" name="userEmail" id="userEmail" placeholder="example@mail.com">
+                </div>
+                <textarea name="userMessage" id="userMessage" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                <button id="fromSendBtn">Send</button>
+            </div>
+        </div>
+        <!-- ----- end of right || bottom div ------- -->
+    </div>
+    <!-- ------------end of Contact Us _____________________ -->
 
 
+    <div class="aboutUsContainer"></div>
 
 
     <script>
@@ -315,11 +408,18 @@
             if (window.scrollY >= 111){
                 document.getElementById("starShape").style.animation = "rotatingAtm 1s 0.2s"
             }
-            if (window.scrollY >= 1000){
+            if (window.scrollY >= 800){
                 document.getElementById("roundyX").style.animation = "rotatingAtm 1s 0.2s"
             }
         });
         // end of animating sliders ------------
+
+        // View More btn 
+        let viewMoreBtn = document.getElementById("viewMoreCards")
+        viewMoreBtn.onclick = ()=>{
+            document.getElementById("pCardsContainer").style.height = "fit-content"
+            document.getElementById("showMoreBtnContainer").style.display = "none"
+        }
 
 
 
