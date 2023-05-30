@@ -838,10 +838,14 @@ hr{
 
 .projectsFrame .pTopDiv .pCards .cardImg{
     height: calc(100% - 24px);
+    aspect-ratio: 16/9;
     margin: 12px;
     margin-right: 0px;
     border-radius: 16px;
+    border: 0.6px solid #fff;
 }
+
+
 .projectsFrame .pTopDiv .pCards .textsCnt{
     margin: 12px;
     position: relative;
@@ -925,7 +929,8 @@ hr{
 .endaPenda{
     width: 150px;
     height: 200px;
-    background-color: var(--accentClr);
+    background-color: white;
+    border: 2px solid var(--tintClr);
     position: absolute;
     right: 0;left: 0;
     margin: auto;
@@ -938,7 +943,7 @@ hr{
     transform: rotate(-40deg) scale(0.9);
     top: 77px;
     left: 10px;
-    color: #fff;
+    color: var(--accentClr);
 }
 .contactUsContainer .tLdiv{
     /* background-color: rgb(140, 255, 0); */
@@ -1028,6 +1033,7 @@ hr{
 .contactUsContainer .bRdiv .form input{
     display: block;
     background-color: #ffffff;
+    color: var(--textDark);
     width: 100%;
     padding: 10px 20px;
     margin-bottom: var(--egdeGap);
@@ -1045,6 +1051,7 @@ hr{
     display: block;
     font-size: 1rem;
     background-color: #ffffff;
+    color: var(--textDark);
     width: 100%;
     padding: 20px;
     margin-bottom: var(--egdeGap);
@@ -1146,3 +1153,158 @@ textarea:focus {
 }
 
 /* _______________________end of Contact US_________________________________ */
+
+.aboutUsContainer{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    column-gap: 6px;
+}
+.aboutUsContainer .altDIv, .aboutUsContainer .arbDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .aboutUsContainer .altDIv{
+    background-color: rgba(0, 128, 0, 0.734);
+} */
+.aboutUsContainer .altDIv .textConttt{
+    margin: 100px;
+    background-color: #fff;
+}
+.aboutUsContainer .altDIv .textConttt h3{
+    color: var(--textDark);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.aboutUsContainer .altDIv .textConttt p{
+    color: var(--textDark);
+}
+
+.aboutUsContainer .arbDiv .shapsCont{
+    margin: 100px;
+    position: relative;
+    width: 310px;
+    height: 310px;
+}
+.aboutUsContainer .arbDiv .shapsCont .shapeStarish{
+    width: 150px;
+    height: 150px;
+    background: url("./svgs/shapeStar.svg") center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    opacity: 0.7;
+}
+.aboutUsContainer .arbDiv .shapsCont .shapeRoundyX{
+    width: 150px;
+    height: 150px;
+    background: url("./svgs/roundedXxxy.svg") center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
+    /* opacity: 0.8; */
+}
+.aboutUsContainer .arbDiv .shapsCont .shapeCircle{
+    width: 150px;
+    height: 150px;
+    background-color: var(--tintClr);
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.94;
+    z-index: -1;
+    border: 2px solid var(--accentClr);
+}
+
+@media screen and (max-width: 1286px){
+    .aboutUsContainer .altDIv .textConttt{
+        margin: 50px;
+    }
+}
+@media screen and (max-width: 1007px){
+    .aboutUsContainer .altDIv .textConttt{
+        margin: 50px;
+    }
+    .aboutUsContainer {
+        display: flex !important;
+        flex-direction: column;
+    }
+      
+    .aboutUsContainer > div:first-child {
+    order: 1;
+    }
+    
+    .aboutUsContainer > div:last-child {
+    order: 0;
+    }
+    .aboutUsContainer .arbDiv .shapsCont{
+        margin: var(--egdeGap);
+    }
+      
+}
+@media screen and (max-width: 660px){
+    .aboutUsContainer .altDIv .textConttt{
+        margin: var(--egdeGap);
+        background-color: var(--tintClr);
+        padding: var(--egdeGap);
+        border-radius: 20px;
+    } 
+    .aboutUsContainer .arbDiv .shapsCont{
+        position: relative;
+        width: 260px;
+        height: 260px;
+        /* background-color: chartreuse; */
+    }
+    .aboutUsContainer .arbDiv .shapsCont .shapeStarish{
+        width: 120px;
+        height: 120px;
+    }
+    .aboutUsContainer .arbDiv .shapsCont .shapeRoundyX{
+        width: 120px;
+        height: 120px;
+    }
+    .aboutUsContainer .arbDiv .shapsCont .shapeCircle{
+        width: 120px;
+        height: 120px;
+    }
+    
+}
+
+.aboutUsContainer{
+    background-color: #fff;
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+.footer{
+    position: absolute;
+    z-index: -1;
+    background-color: var(--accentClr);
+    color: #fff;
+    height: 60px;
+    padding-bottom: 60px;
+    /* top: -30px; */
+    position: relative;
+}
+.footer::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-color: var(--accentClr);
+    top: -30px;
+}
+.footer span{
+    display: block;
+    /* background-color: green; */
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    margin: auto;
+}
