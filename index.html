@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>imtiyaz's Portfolio</title>
-    <meta name="theme-color" content="#f94866">
+    <meta name="theme-color" content="#5874fc">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./svgs/favIcon.svg" sizes="any" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,17 +33,17 @@
 
             <div class="links">
                 <a href="#scrollToProjects"><span class="material-icons">space_dashboard</span>
-                    <div class="desc">Projects</div>
+                    <div class="desc">My Works</div>
                 </a>
             </div>
-            
+
             <div class="links">
                 <a id="contactUsTile" href="#scrollToContactUs"><span class="material-icons">contact_page</span>
                     <div class="desc">Contact Us</div>
                 </a>
             </div>
             <div class="links">
-                <a href="#"><span class="material-icons">info</span>
+                <a href="#scrollToAbout"><span class="material-icons">info</span>
                     <div class="desc">About Us</div>
                 </a>
             </div>
@@ -84,9 +85,9 @@
         <div class="profilePicBox">
             <div class="profile"></div>
             <div class="socialIcons">
-                <a class="sIcon" id="instagram" href="#"></a>
-                <a class="sIcon" id="telegram" href="#"></a>
-                <a class="sIcon" id="email" href="#"></a>
+                <a class="sIcon" id="instagram" href="https://www.instagram.com/"></a>
+                <a class="sIcon" id="telegram" href="https://t.me/XengShi"></a>
+                <a class="sIcon" id="email" href="mailto:imtiyaz.india@proton.me"></a>
             </div>
         </div>
         <hr>
@@ -181,197 +182,243 @@
     </div>
     <!-- ________________end of top frame_________________ -->
 
-    <!-- ______________Project Container___________ -->
-    <div class="projectsFrame">
+    <!-- -------------------Projects 2.0 Container________________ -->
+    <div class="projectScrollableDiv">
         <div id="scrollToProjects"></div>
-        <div class="pTopDiv">
-            <div id="roundyX" class="roundyX">
-                <span class="sssPan" style="transform: scale(0.86);">Projects</span>
+        <div class="xStarish"><span class="sssPan">My Works</span></div>
+        <div class="projectsCardsDiv">
+
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"
+                    style="background: url(https://i.ibb.co/GVwQ4tK/IMG-20230530-190707.jpg) center center no-repeat; background-size: contain;">
+                </div>
+                <div class="textsCont">
+                    <a href="https://github.com/imtiyazhasankhan/news-india-functionBased">News App</a>
+                    <p>I built that website using React.js and integrated it with the News API. The website
+                        provides current news articles and includes a search function for users to find specific
+                        news content.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>ReactJS</span>
+                    </div>
+                </div>
             </div>
-            <div id="pCardsContainer" class="pCardsContainer">
-
-                <div id="showMoreBtnContainer" class="showMoreBtnContainer">
-                    <button id="viewMoreCards">View More</button>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"
+                    style="background: url('./imgs/hangNoWeather.jpg') center center no-repeat; background-size: contain;">
                 </div>
-
-                <!-- -------projects card_____ -->
-                <div class="pCards">
-                    
-                    <img class="cardImg" src="./imgs/hangNoWeather.jpg" alt="">
-                    <div class="textsCnt">
-                        <div class="headingText">Weather Informer</div>
-                        <p>Weather Informer is a user-friendly website built using ReactJS and integrated with a weather API. It provides essential weather information for various cities, allowing users to easily search for weather updates.</p>
-                        <div class="skillUsed">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>ReactJS</span>
-                        </div>
+                <div class="textsCont">
+                    <a href="https://hangnoweather.netlify.app/">Weather Informer</a>
+                    <p>Weather Informer is a user-friendly website built using ReactJS and integrated with a weather
+                        API. It provides essential weather information for various cities, allowing users to easily
+                        search for weather updates.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>ReactJS</span>
                     </div>
                 </div>
-                <!-- -------end of projects card_____ -->
-                <!-- -------projects card_____ -->
-                <div class="pCards">
-                    <!-- <div class="imgCnt"></div> -->
-                    <img class="cardImg" src="https://i.ibb.co/GVwQ4tK/IMG-20230530-190707.jpg" alt="">
-                    <div class="textsCnt">
-                        <div class="headingText">News App</div>
-                        <p>I have built a News website using React.js and integrated it with the News API. The website
-                            provides current news articles and includes a search function for users to find specific
-                            news content.</p>
-                        <div class="skillUsed">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>ReactJS</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------end of projects card_____ -->
-                <!-- -------projects card_____ -->
-                <div class="pCards">
-                    <!-- <div class="imgCnt"></div> -->
-                    <img class="cardImg" src="./imgs/clock.jpg" alt="">
-                    <div class="textsCnt">
-                        <div class="headingText">Animated Analoge Clock</div>
-                        <p>A simple analog clock created using HTML, CSS, and JavaScript. The clock displays the current time with hour, minute, and second hands moving in real-time.</p>
-                        <div class="skillUsed">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------end of projects card_____ -->
-
-                <!-- -------projects card_____ -->
-                <div class="pCards">
-                    <!-- <div class="imgCnt"></div> -->
-                    <img class="cardImg" src="https://i.postimg.cc/7ZB0cRJT/IMG-20220517-205523.jpg" alt="">
-                    <div class="textsCnt">
-                        <div class="headingText">Text Utilizer</div>
-                        <p>Text Utilizer is a tool designed for manipulating text. With its features, you can effortlessly remove excessive spaces, convert text to uppercase or lowercase, and easily replace words with desired alternatives, among other functionalities.</p>
-                        <div class="skillUsed">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>ReactJS</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------end of projects card_____ -->
-
-                <!-- -------projects card_____ -->
-                <div class="pCards">
-                    <!-- <div class="imgCnt"></div> -->
-                    <img class="cardImg" src="https://i.ibb.co/rGFk8V0/fatafit.jpg" alt="">
-                    <div class="textsCnt">
-                        <div class="headingText">GYM</div>
-                        <p>A simple GYM Website</p>
-                        <div class="skillUsed">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------end of projects card_____ -->
-
-                <!-- -------projects card_____ -->
-                <div class="pCards">
-                    <!-- <div class="imgCnt"></div> -->
-                    <!-- <img class="cardImg" src="./imgs/img0.png" alt=""> -->
-
-                    <video class="cardImg" style="background-color: #166435;" autoplay="" loop="" muted="">
-                        <source loading="" src="./images/infinity.webm" type="video/webm">
-                        <source src="https://raw.githubusercontent.com/imtiyazhasankhan/portfolio/main/images/infinity.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="textsCnt">
-                        <div class="headingText">Infinity Animation</div>
-                        <p></p>
-                        <div class="skillUsed">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------end of projects card_____ -->
-                <!-- -------projects card_____ -->
-                <div class="pCards">
-                    <!-- <div class="imgCnt"></div> -->
-                    <img class="cardImg" src="./imgs/muklukShoes.png" alt="">
-                    <div class="textsCnt">
-                        <div class="headingText">Ecommerce Website</div>
-                        <p>The ecommerce website that offers a wide variety of shoes for purchase, catering to diverse preferences, styles, and sizes, ensuring a seamless shopping experience.</p>
-                        <div class="skillUsed">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------end of projects card_____ -->
-
             </div>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"
+                    style="background: url('./imgs/clock.jpg') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="textsCont">
+                    <a href="">Analoge Clock</a>
+                    <p>A simple analog clock created using HTML, CSS, and JavaScript. The clock displays the current
+                        time with hour, minute, and second hands moving in real-time.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"
+                    style="background: url('https://i.postimg.cc/7ZB0cRJT/IMG-20220517-205523.jpg') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="textsCont">
+                    <a href="https://text-utils-cwh.vercel.app/">Text Utilizer</a>
+                    <p>Text Utilizer is a tool designed for manipulating text. With its features, you can effortlessly
+                        remove excessive spaces, convert text to uppercase or lowercase, and easily replace words with
+                        desired alternatives, among other functionalities.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>ReactJS</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"
+                    style="background: url('./imgs/fatafitGym.png') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="textsCont">
+                    <a href="https://imtiyazhasankhan.github.io/fatafit/fvfit.html">Simple Gym Website</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sapiente est sequi architecto, adipisci non. Perferendis, doloremque voluptatum quam molestias maiores, est laudantium beatae ea ipsa soluta optio.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"
+                    style="background: url('./imgs/tictacToe.jpg') center center no-repeat; background-size: contain;"></div>
+                <div class="textsCont">
+                    <a href="https://imtiyazhasankhan.github.io/Tic-tac-toe/">Tic Tac Toe Game</a>
+                    <p>Tic Tac Toe is an immensely popular two-player game, and I have developed a version of it using pure HTML, CSS, and JavaScript.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"
+                    style="background: url('./imgs/muklukShoes.png') center center no-repeat; background-size: contain;">
+                </div>
+                <div class="textsCont">
+                    <a href="https://mukluk-shoes-website.netlify.app/">Ecommerce Website</a>
+                    <p>The ecommerce website that offers a wide variety of shoes for purchase, The design was provided to me, and I successfully converted it into a fully functional HTML code.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"></div>
+                <div class="textsCont">
+                    <a href="">News App</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias delectus accusantium
+                        consequuntur eaque voluptate, sunt maiores, ducimus quam, quia officia esse eligendi vitae atque
+                        fuga soluta iusto a laudantium rerum!</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---card start end--- -->
+            <!-- ---card start--- -->
+            <div class="pCards">
+                <div class="preview"></div>
+                <div class="textsCont">
+                    <a href="">News App</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias delectus accusantium
+                        consequuntur eaque voluptate, sunt maiores, ducimus quam, quia officia esse eligendi vitae atque
+                        fuga soluta iusto a laudantium rerum!</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---card start end--- -->
+
         </div>
-
-
     </div>
-    <!-- ______________end of Project Container___________ -->
+    <!-- -------------------end of Projects 2.0 Container________________ -->
+
 
     <!-- ------------Contact Us _____________________ -->
     <div class="contactUsContainer">
         <div id="scrollToContactUs"></div>
-        <!-- --- top || left div --- -->
-        <div class="endaPenda">
-            <span class="sssPan cntus">Contact Us</span>
-        </div>
-        <div class="tLdiv">
-            <div class="cltCont">
-                <div class="sapna">
-                    <div class="contactUsIcons">
-                       <div class="icon iconPhone"></div>
-                    </div> 
-                    <a href="tel:+1234567890">123-456-7890</a>
-                </div>
-                <div class="sapna">
-                    <div class="contactUsIcons" >
-                        <div class="icon iconEmail"></div>
-                    </div> 
-                    <a href="mailto:info@example.com">info@example.com</a>
-                </div>
-                <div class="sapna">
-                    <div class="contactUsIcons" >
-                        <div class="icon iconLocation"></div>
-                    </div> 
-                    <!-- <a href="">New Delhi, India</a> -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14010.184192681178!2d77.2128949495828!3d28.6133922536312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1685287478404!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- <iframe frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=28.610472633185317~77.21247305136043&lvl=17.09&typ=d&sty=h&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe> -->
-                </div>
+        <div class="topIcons">
+            <div class="dialerIcon">
+                <div class="iconC"></div>
+            </div>
+            <div class="sssPan">Contact Us</div>
+            <div class="messageIcon">
+                <div class="iconC"></div>
             </div>
         </div>
-        <!-- --- end of top || left div --- -->
+        <div class="gridOrFlex">
 
-        <!-- ----- right || bottom div ------- -->
-        <div class="bRdiv">
-            <div class="form">
-                <div class="inptCont">
-                    <input type="text" placeholder="Your name">
-                    <input type="email" name="userEmail" id="userEmail" placeholder="example@mail.com">
+            <div class="leftDiv">
+                <div class="infoCont">
+                    <div class="sssPan">Contact Information</div>
+
+                    <div class="iconAndText" style="margin-top: var(--edgeGap);">
+                        <div class="icon"><span class="phone"></span></div>
+                        <a href="">+91 999OOOII69</a>
+                    </div>
+                    <div class="iconAndText">
+                        <div class="icon"><span class="email"></span></div>
+                        <a href="mailto:imtiyaz.india@proton.me">imtiyaz.india@proton.me</a>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d875.7262690319232!2d77.22365513249771!3d28.602624368257313!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1685967857788!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div class="socialLinks">
+                        <a id="faceb" href="insgram"></a>
+                        <a id="tweet" href="insgram"></a>
+                        <a id="githb" href="insgram"></a>
+                        <a id="teleg" href="https://t.me/XengShi"></a>
+                        <a id="linkDN" href="insgram"></a>
+                    </div>
                 </div>
-                <textarea name="userMessage" id="userMessage" cols="30" rows="10" placeholder="Type your message here"></textarea>
-                <button id="fromSendBtn">Send</button>
             </div>
+
+            <!-- right div ----------- -->
+            <div class="rightDiv">
+                <div class="sssPan">Get in touch</div>
+                <div class="form">
+
+                    <div class="inptCont">
+                        <input type="text" placeholder="Please enter your name">
+                        <input type="email" placeholder="Your email">
+                    </div>
+                    
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="0" rows="10" placeholder="Your message..."></textarea>
+                    <button id="sendBTN">Send</button>
+                </div>
+            </div>
+
         </div>
-        <!-- ----- end of right || bottom div ------- -->
+
+
     </div>
     <!-- ------------end of Contact Us _____________________ -->
 
 
+    <div id="scrollToAbout"></div>
     <div class="aboutUsContainer">
         <div class="altDIv">
             <div class="textConttt">
                 <H3>About Us</H3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi non, natus, dignissimos sit quisquam error asperiores amet provident, repudiandae tenetur dolorem minima! Eos esse dolore accusamus repellat? Provident amet molestiae laborum reiciendis deserunt unde, et, tenetur perspiciatis error adipisci quidem totam! Aliquid quo ratione sit magnam dolorum minus reiciendis atque, accusantium molestias nihil! Esse exercitationem mollitia consectetur animi illum dignissimos dicta nesciunt repellat ullam assumenda maiores praesentium labore quia distinctio saepe error quaerat, tempore sint sunt veniam harum quibusdam! Sapiente odio dolorum sit debitis quos, rem qui culpa dolore officiis cumque at, nisi quae, ut odit vel. Sint, nesciunt quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi non, natus, dignissimos sit quisquam
+                    error asperiores amet provident, repudiandae tenetur dolorem minima! Eos esse dolore accusamus
+                    repellat? Provident amet molestiae laborum reiciendis deserunt unde, et, tenetur perspiciatis error
+                    adipisci quidem totam! Aliquid quo ratione sit magnam dolorum minus reiciendis atque, accusantium
+                    molestias nihil! Esse exercitationem mollitia consectetur animi illum dignissimos dicta nesciunt
+                    repellat ullam assumenda maiores praesentium labore quia distinctio saepe error quaerat, tempore
+                    sint sunt veniam harum quibusdam! Sapiente odio dolorum sit debitis quos, rem qui culpa dolore
+                    officiis cumque at, nisi quae, ut odit vel. Sint, nesciunt quos.</p>
             </div>
         </div>
         <div class="arbDiv">
@@ -382,11 +429,13 @@
             </div>
         </div>
     </div>
-
-    <div class="footer">
-        <span>Thats all</span>
+    
+    <div class="footer">  
+        <span>© IMTIYAZ 2023</span>
+        <span>Design inspired with Material You design</span>
+        
     </div>
-
+    
 
     <script>
 
@@ -409,11 +458,11 @@
             let cssSlider = document.getElementById("cssSlider")
             cssSlider.style.transitionDelay = "0.2s"
             cssSlider.style.width = "calc(85% - 70px)"
-            
+
             let jsSlider = document.getElementById("jsSlider")
             jsSlider.style.transitionDelay = "0.4s"
             jsSlider.style.width = "calc(76% - 70px)"
-            
+
             let reactJsSlider = document.getElementById("reactJsSlider")
             reactJsSlider.style.transitionDelay = "0.6s"
             reactJsSlider.style.width = "calc(60% - 60px)"
@@ -435,21 +484,40 @@
             }
 
             // Animating material you shapes
-            if (window.scrollY >= 111){
+            if (window.scrollY >= 111) {
                 document.getElementById("starShape").style.animation = "rotatingAtm 1s 0.2s"
-            }
-            if (window.scrollY >= 800){
-                document.getElementById("roundyX").style.animation = "rotatingAtm 1s 0.2s"
             }
         });
         // end of animating sliders ------------
 
-        // View More btn 
-        let viewMoreBtn = document.getElementById("viewMoreCards")
-        viewMoreBtn.onclick = ()=>{
-            document.getElementById("pCardsContainer").style.height = "fit-content"
-            document.getElementById("showMoreBtnContainer").style.display = "none"
-        }
+
+        // for vertically scrolling with mouse pressed or or drag and drop kinda scrolling 
+        const container = document.querySelector(".projectsCardsDiv");
+        let isMouseDown = false;
+        let startX;
+        let scrollLeft;
+
+        container.addEventListener("mousedown", (e) => {
+            isMouseDown = true;
+            startX = e.pageX - container.offsetLeft;
+            scrollLeft = container.scrollLeft;
+        });
+
+        container.addEventListener("mouseleave", () => {
+            isMouseDown = false;
+        });
+
+        container.addEventListener("mouseup", () => {
+            isMouseDown = false;
+        });
+
+        container.addEventListener("mousemove", (e) => {
+            if (!isMouseDown) return;
+            e.preventDefault();
+            const x = e.pageX - container.offsetLeft;
+            const walk = (x - startX) * 2; // Adjust scrolling speed if needed
+            container.scrollLeft = scrollLeft - walk;
+        });
 
 
 
@@ -457,3 +525,5 @@
 </body>
 
 </html>
+<!-- initialization : 30 April 2023pH 19:35 -->
+<!-- Completed with lots of bugs : 30 May 2023pH 7:38 -->
