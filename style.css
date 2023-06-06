@@ -578,7 +578,7 @@ hr{
     column-gap: 6px;
     padding-bottom: var(--edgeGap);
 }
-#scrollToSkill{
+#skills{
     width: 20px;
     height: 20px;
     /* background-color: rebeccapurple; */
@@ -740,7 +740,7 @@ hr{
     /* background-color: var(--tintClr); */
 }
 
-#scrollToProjects{
+#projects{
     width: 30px;
     height: 30px;
     /* background-color: red; */
@@ -857,7 +857,7 @@ hr{
     margin-top: 100px;
 }
 
-#scrollToContactUs{
+#ContactUs{
     width: 30px;
     height: 30px;
     position: absolute;
@@ -1174,7 +1174,7 @@ hr{
     
 }
 
-#scrollToAbout{
+#About{
     width: 30px;
     height: 30px;
     position: absolute;
